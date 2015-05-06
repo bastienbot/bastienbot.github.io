@@ -1,0 +1,373 @@
+#logo
+{
+	margin-top: 15px;
+	margin-bottom: 15px;
+	width: 150px;
+}
+
+body
+{
+	font-family: 'Oxygen', sans-serif;
+	/*background-color: #F4F4F4;*/
+	/*background: url("../images/background.svg");*/
+}
+
+/*----------------- TUTO -------------------*/
+
+#tuto
+{
+	padding-top: 20px;
+	color: #EF4D61;
+}
+
+#tuto button
+{
+	background-color: #f4f4f4;
+	margin-left: 6px;
+	margin-right: 6px;
+
+	outline: none;
+	
+	color: #EF4D61;
+
+	font-size: 15px;
+
+	border-radius: 5px;
+	border: 1px solid #EF4D61;
+	text-align: center;
+	white-space: nowrap;
+	cursor: pointer;
+
+	width: 250px;
+	height: 30px;
+}
+
+#tuto input[type="range"]
+{
+	margin-left: 10px;
+	background-color: #EF4D61;
+}
+
+#tuto svg
+{
+	display: inline-block;
+	text-align: center;
+}
+
+/*----- dzoom ----*/
+
+.dezoom
+{
+	zoom: 0.7;
+}
+
+
+/*=============== HEADER ===================*/
+/*------------  style du titre -------------*/
+
+header
+{
+	padding-left: 200px;
+}
+
+/*---------- connect form ------------*/
+
+#connect_form
+{
+	margin-top: 20px;
+	margin-right: 10px;
+	padding-right: 0px;
+	float: right;
+}
+
+#connect_form button
+{
+	background-color: #EAE5E1;
+	margin-left: 6px;
+	margin-right: 6px;
+
+	outline: none;
+	
+	color: #EF4D61;
+
+	font-size: 15px;
+
+	border-radius: 5px;
+	border: 1px solid #EAE5E1;
+	text-align: center;
+	white-space: nowrap;
+	cursor: pointer;
+
+	width: 110px;
+	height: 30px;
+}
+
+.css-code
+{
+	position: absolute;
+	right: 250px;
+	top: 300px;
+}
+
+.yo
+{
+	margin-top : -5px;
+	float: right;
+
+	background-color: #;
+	margin-left: 6px;
+	margin-right: 6px;
+
+	text-decoration: none; 
+
+	outline: none;
+	
+	color: #EF4D61;
+
+	font-size: 15px;
+
+	border-radius: 5px;
+	border: 1px solid #EF4D61;
+	text-align: center;
+	white-space: nowrap;
+	cursor: pointer;
+
+	padding-top: 10px;
+
+	width: 110px;
+	height: 30px;
+}
+
+.yo:hover
+{
+	background-color: #EF4D61;
+	color: #EAE5E2;
+}
+
+#connect_form button:hover
+{
+	background-color: #EF4D61;
+	color: #EAE5E1;
+}
+
+#register
+{
+	float: right;
+}
+
+/*--------------- menu bar -------------*/
+
+#menu_back
+{
+	position: absolute;
+
+	width: 13%;
+	background: #2F3031;
+}
+
+#menu
+{
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	height: 1000px;
+	background: #2F3031;
+}
+
+#menu ul
+{
+	position:fixed;
+	height: 1000px;
+	margin: 0;
+	width: 13%;
+	height: 100%;
+	padding: 0px;
+	list-style: none;
+}
+
+#menu ul li
+{
+	background: #2F3031;
+	text-align: center;
+	font-weight: 300;
+	font-size: 15px;
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+
+#menu ul a
+{
+	color : white;
+	text-decoration: none;
+}
+
+#menu ul li
+{
+	padding: 0;
+}
+
+#menu .hover
+{
+	padding-top: 25px;
+	padding-bottom: 25px;
+	border-top: 1px solid white;
+}
+
+#third
+{
+	border-bottom: 1px solid white;
+}
+
+#menu .hover:hover
+{
+	background: #EF4D61;
+	text-align: center;
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+
+/*------------- begin button -----------*/
+
+#begin_button
+{
+	left: 13%;
+	position: absolute;
+    margin: auto;
+    top: -120px;
+    right: 0;
+    bottom: 0;
+
+    width: 588px;
+    height: 100px;
+}
+
+#begin_button h1
+{
+	margin-top: 0;
+	margin-bottom: 25px;
+	font-size: 40px;
+}
+
+#boutons
+{
+	margin: auto;
+	width: 436px;
+}
+
+#begin_button button
+{
+	margin-left: 8px;
+	margin-right: 8px;
+	border-color: #ff5a5f;
+	border-bottom-color: #e00007;
+
+	background-color: #EF4D61;
+	color: #fff;
+
+	outline: none;
+
+	padding: 13px 27px;
+	font-size: 30px;
+	font-weight: 300;
+
+	border-radius: 5px;
+	border: 1px solid #ff5a5f;
+	text-align: center;
+	white-space: nowrap;
+	cursor: pointer;
+
+	width: 200px;
+}
+
+#begin_button button:hover
+{
+	background-color: #EA7D8F;
+	border-color: #EA7D8F;
+}
+
+
+/* -------------- resume ----------------------*/
+
+#resume
+{
+	text-align: center;
+	padding-top: 20px;
+	width: 574px;
+	margin: auto;
+	display: none;		
+}
+
+
+/*-------------- create page -----------------*/
+
+#panel_page div
+{
+	display: inline;
+}
+
+/*-------------- all the shit which need to be recal ----------*/
+
+.middle
+{
+	margin-left: 13%;
+}
+
+
+/*--------------- avatar creation --------------------*/
+
+/*svg
+{
+	margin-left: 100px;
+	margin-top: 100px;
+}
+*/
+
+#img_svg
+{
+	top: 50px;
+	margin-left: 25px;
+	/*left: 50px;*/
+	position: absolute;
+}
+
+.body-area
+{
+	text-align: center;
+	padding-top: 300px;
+}
+
+#create div
+{
+	/*display: inline-block;
+	vertical-align: vertical;*/
+}
+
+
+/*------------- footer -----------------*/
+
+footer
+{
+	text-align: center;
+	width: 100%;
+	position:fixed;
+	bottom:0;
+	left:0;
+	height: 60px;
+	background: #EAE5E1;
+}
+
+footer div p
+{
+	display: inline-block;
+	margin-left: 25px;
+	margin-right: 25px;
+}
+
+footer div
+{
+	margin: 9px 0px 9px 200px;
+	padding-top: 0px;
+	font-size: 13px;
+	color : #A0A3A2;
+}
+
