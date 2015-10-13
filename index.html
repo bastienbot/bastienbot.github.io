@@ -1,59 +1,93 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Id-code</title>
-		<meta charset="utf-8">
-		<script type="text/javascript" src="js/jquery.min.js"></script>
-		<script type="text/javascript" src="js/tutorial.js"></script>
-		<script type="text/javascript" src="js/jquery.reveal.js"></script>
-		<script type="text/javascript" src="js/rangeslider.js"></script>
-		<script type="text/javascript" src="js/colorpicker.js"></script>
+<head>
+	<title>Id-code</title>
+	<meta charset="utf-8">
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/tutorial.js"></script>
+	<script type="text/javascript" src="js/jquery.reveal.js"></script>
+	<script type="text/javascript" src="js/rangeslider.js"></script>
+	<script type="text/javascript" src="js/colorpicker.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
 
-		<link rel="stylesheet" text="text/css" href="css/style.css">
-		<link rel="stylesheet" text="text/css" href="css/normalize.css">
-		<link rel="stylesheet" text="text/css" href="css/reveal.css">
-		<link rel="stylesheet" type="text/css" href="css/rangeslider.css">
-		<link rel="stylesheet" media="screen" type="text/css" href="css/colorpicker.css"/>
-		
-	</head>
-	<body>
-		<div id="menu_back"></div>
-		<div id="menu">
-			<nav>
-			<ul>
-				<li>
-				<a href="index.html">
-					<img src="images/logo1.svg" id="logo">
-				</a>
-				</li>
-				<a href="tutorial.html"><li class="hover">TUTORIEL</li></a>
-				<a href="avatar.html"><li class="hover">CRÉER SON AVATAR</li></a>
-			</ul>
-			</nav>
+	<link rel="stylesheet" text="text/css" href="css/style.css">
+	<link rel="stylesheet" text="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" text="text/css" href="css/reveal.css">
+	<link rel="stylesheet" type="text/css" href="css/rangeslider.css">
+	<link rel="stylesheet" media="screen" type="text/css" href="css/colorpicker.css"/>
+
+</head>
+<body>
+
+<div class="container">
+	<div class="row">
+		<div class="col-sm-12 col-md-12 menu">
+			<div class="col-xs-3 col-sm-3 col-md-4">
+				<a href="#"><img id="logo" src="images/logo1.svg"></a>
+			</div>
+			<div class="hidden-xs col-sm-4 col-md-4 btn_menu">
+				<a class="menu_txt" href="tutorial.html"><span>TUTORIEL</span></a>
+			</div>
+			<div class="hidden-xs col-sm-5 col-md-4 btn_menu">
+				<a class="menu_txt" href="avatar.html"><span>CREER UN AVATAR</span></a>
+			</div>
+			<div class="visible-xs col-xs-4 xs_btn_menu">
+				<a class="xs_btn" href="tutorial.html"><span>TUTORIEL</span></a>
+			</div>
+			<div class="visible-xs col-xs-5 xs_btn_menu">
+				<a class="xs_btn" href="tutorial.html"><span>CREER UN AVATAR</span></a>
+			</div>
 		</div>
+		<nav class="navbar navbar-default" role="navigation">
 
-<div id="begin_button" class="middle">
-	<h1>Codeur, l'aventure commence !</h1>
-	<div id="boutons">
-		<button type="submit">Jouer</button>
-		<button type="submit" onclick="show_msg()">À propos</button>
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a href="#"><img id="logo" src="images/logo1.svg"></a>
+			</div>
+
+			<div class="collapse navbar-collapse navbar-ex1-collapse">
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="#">ACCUEIL</a></li>
+					<li><a href="tutorial.html">TUTORIEL</a></li>
+					<li><a href="avatar.html">CREER UN AVATAR</a></li>
+				</ul>
+			</div>
+		</nav>
 	</div>
-	<p id="resume">
-			Tu veux apprendre le langage de la programmation tout en t'amusant ?
-			Avec l'application Id-Code® tu es au bon endroit ! Tu vas pouvoir créer ton avatar et son univers et 
-			rejoindre une communauté ou tu pourras partager ton profil et visiter les créations des autres !
-	</p>
-</div>
-		<footer>
-		<div>
-			<p>
-			Coded by Team Eleven
-			&nbsp &nbsp - &nbsp &nbsp
-			In association with "Les Voyageurs du Code" & "Ecole 42"
-			&nbsp &nbsp - &nbsp &nbsp
-			2015
+
+	<div class="row">
+		<div class="col-sm-12" id="begin_button" class="middle">
+			<h1>Codeur, l'aventure commence !</h1>
+			<div id="boutons no-dec">
+				<button type="submit"><a class="no-dec" href="avatar.html">Jouer</a></button>
+				<button type="submit" onclick="show_msg()">À propos</button>
+			</div>
+			<p id="resume">
+				Tu veux apprendre le langage de la programmation tout en t'amusant ?
+				Avec l'application Id-Code® tu es au bon endroit ! Tu vas pouvoir créer ton avatar et son univers et 
+				rejoindre une communauté ou tu pourras partager ton profil et visiter les créations des autres !
 			</p>
 		</div>
-		</footer>
-	</body>
+	</div>
+	<footer>
+		<div>
+			<p>
+				Coded by Team Eleven
+				&nbsp &nbsp - &nbsp &nbsp
+				Main contributor: Mathieu Darrigade
+				&nbsp &nbsp - &nbsp &nbsp
+				In association with "Les Voyageurs du Code" & "Ecole 42"
+				&nbsp &nbsp - &nbsp &nbsp
+				2015
+			</p>
+		</div>
+	</footer>
+</div>
+</body>
 </html>

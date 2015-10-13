@@ -75,7 +75,6 @@ $(document).ready(function(){
 		$('#css-code').html('.' + mofo_var + '{<br>' + bg + '<br>' + bor + '<br><input id="f' + mofo_var + '"><br>}');
 		$('#f' + mofo_var).change( function refresh(){
 		var elem = $(this).attr('id').substring(1);
-			//$('#' + elem).css('fill', $('#f' + elem).val());
 			var pval = $('#f' + elem).val();
 			if (pval.substr(pval.length - 1) == ';')
 				 pval = pval.substr(0, pval.length - 1);
@@ -102,7 +101,6 @@ $(document).ready(function(){
 				var styles = {
 		      	stroke: ar_val[x + 2],
 		      	strokeWidth: ar_val[x]
-		      	//borderStyle: 'solid'
 		    	};
 				$('#' + elem).css(styles);
 				props[mofo_var].bor = pval;
@@ -111,7 +109,4 @@ $(document).ready(function(){
 			$('#f' + elem).val("");
 		});
 	}
-
-	// var hair = document.getElementById("hair");
-	// 	hair.style.fill = "#ff0666";
 });
