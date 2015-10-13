@@ -1,15 +1,8 @@
-#logo
-{
-	margin-top: 15px;
-	margin-bottom: 15px;
-	width: 150px;
-}
-
 body
 {
 	font-family: 'Oxygen', sans-serif;
-	/*background-color: #F4F4F4;*/
-	/*background: url("../images/background.svg");*/
+	background-color: #F4F4F4;
+	background: url("/images/background.svg");
 }
 
 /*----------------- TUTO -------------------*/
@@ -30,7 +23,7 @@ body
 	
 	color: #EF4D61;
 
-	font-size: 15px;
+	font-size: 14px;
 
 	border-radius: 5px;
 	border: 1px solid #EF4D61;
@@ -60,7 +53,6 @@ body
 {
 	zoom: 0.7;
 }
-
 
 /*=============== HEADER ===================*/
 /*------------  style du titre -------------*/
@@ -157,107 +149,106 @@ header
 
 /*--------------- menu bar -------------*/
 
-#menu_back
-{
-	position: absolute;
-
-	width: 13%;
-	background: #2F3031;
+@media (max-width: 500px) {
+	.menu {
+		display: none;
+	}
+	.navbar{
+		background-color: #2F3031;
+		height: 65px;
+		width: 100%;
+	}
+	.navbar-default {
+		background-color: #2F3031;
+	}
 }
 
-#menu
+@media (min-width: 500px) {
+	.navbar {
+		display: none;
+	}
+}
+
+#logo {
+	height: 70px;
+}
+
+.xs {
+	text-align: center;
+}
+
+.menu
 {
-	position: absolute;
 	margin: 0;
 	padding: 0;
-	height: 1000px;
 	background: #2F3031;
+	height: 75px;
+	width: 100%;
 }
 
-#menu ul
-{
-	position:fixed;
-	height: 1000px;
-	margin: 0;
-	width: 13%;
-	height: 100%;
-	padding: 0px;
-	list-style: none;
+.btn_menu {
+	padding-top: 18px;
+	border-left: 1px white solid;
+	height: 75px;
 }
 
-#menu ul li
-{
-	background: #2F3031;
-	text-align: center;
-	font-weight: 300;
-	font-size: 15px;
+.xs_btn_menu {
 	padding-top: 25px;
-	padding-bottom: 25px;
+	border-left: 1px white solid;
+	height: 75px;
 }
 
-#menu ul a
-{
-	color : white;
+.xs_btn {
+	font-size: 18px;
 	text-decoration: none;
+	color: white;
 }
 
-#menu ul li
-{
-	padding: 0;
-}
-
-#menu .hover
-{
-	padding-top: 25px;
-	padding-bottom: 25px;
-	border-top: 1px solid white;
-}
-
-#third
-{
-	border-bottom: 1px solid white;
-}
-
-#menu .hover:hover
-{
-	background: #EF4D61;
+.menu div {
 	text-align: center;
-	padding-top: 25px;
-	padding-bottom: 25px;
+}
+
+.menu_txt {
+	color: white;
+	text-decoration: none;
+	font-size: 25px;
+}
+
+.menu span:hover
+{
+	color: #EF4D61;
 }
 
 /*------------- begin button -----------*/
 
+#no-dec {
+	text-decoration: none;
+	color: white;
+}
+
 #begin_button
 {
-	left: 13%;
-	position: absolute;
-    margin: auto;
-    top: -120px;
-    right: 0;
-    bottom: 0;
-
-    width: 588px;
-    height: 100px;
+	margin-top: 300px;
+	text-align: center;
 }
 
 #begin_button h1
 {
 	margin-top: 0;
 	margin-bottom: 25px;
-	font-size: 40px;
+	font-size: 39px;
 }
 
 #boutons
 {
 	margin: auto;
-	width: 436px;
 }
 
 #begin_button button
 {
 	margin-left: 8px;
 	margin-right: 8px;
+	margin-bottom: 7px;
 	border-color: #ff5a5f;
 	border-bottom-color: #e00007;
 
@@ -324,9 +315,7 @@ header
 
 #img_svg
 {
-	top: 50px;
 	margin-left: 25px;
-	/*left: 50px;*/
 	position: absolute;
 }
 

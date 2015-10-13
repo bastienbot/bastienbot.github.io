@@ -3,13 +3,15 @@
 	<head>
 		<title>Id-code</title>
 		<meta charset="utf-8">
-		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.js"></script>
 		<script type="text/javascript" src="js/tutorial.js"></script>
 		<script type="text/javascript" src="js/jquery.reveal.js"></script>
 		<script type="text/javascript" src="js/rangeslider.js"></script>
 		<script type="text/javascript" src="js/colorpicker.js"></script>
+		<script type="text/javascript" src="js/bootstrap.js"></script>
 
 		<link rel="stylesheet" text="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 		<link rel="stylesheet" text="text/css" href="css/normalize.css">
 		<link rel="stylesheet" text="text/css" href="css/reveal.css">
 		<link rel="stylesheet" type="text/css" href="css/rangeslider.css">
@@ -17,20 +19,46 @@
 		
 	</head>
 	<body>
-		<div id="menu_back"></div>
-		<div id="menu">
-			<nav>
-			<ul>
-				<li>
-				<a href="index.html">
-					<img src="images/logo1.svg" id="logo">
-				</a>
-				</li>
-				<a href="tutorial.html"><li class="hover">TUTORIEL</li></a>
-				<a href="avatar.html"><li class="hover">CRÉER SON AVATAR</li></a>
-			</ul>
-			</nav>
+		<div class="row">
+		<div class="col-sm-12 col-md-12 menu">
+			<div class="col-xs-3 col-sm-3 col-md-4">
+				<a href="index.html"><img id="logo" src="images/logo1.svg"></a>
+			</div>
+			<div class="hidden-xs col-sm-4 col-md-4 btn_menu">
+				<a class="menu_txt" href="tutorial.html"><span>TUTORIEL</span></a>
+			</div>
+			<div class="hidden-xs col-sm-5 col-md-4 btn_menu">
+				<a class="menu_txt" href="avatar.html"><span>CREER UN AVATAR</span></a>
+			</div>
+			<div class="visible-xs col-xs-4 xs_btn_menu">
+				<a class="xs_btn" href="tutorial.html"><span>TUTORIEL</span></a>
+			</div>
+			<div class="visible-xs col-xs-5 xs_btn_menu">
+				<a class="xs_btn" href="avatar.html"><span>CREER UN AVATAR</span></a>
+			</div>
 		</div>
+			<nav class="navbar navbar-default" role="navigation">
+
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex2-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a href="#"><img id="logo" src="images/logo1.svg"></a>
+			</div>
+
+			<div class="collapse navbar-collapse navbar-ex2-collapse">
+				<ul class="nav navbar-nav">
+					<li><a href="index.html">ACCUEIL</a></li>
+					<li class="active"><a href="tutorial.html">TUTORIEL</a></li>
+					<li><a href="avatar.html">CREER UN AVATAR</a></li>
+				</ul>
+			</div>
+		</nav>
+		</div>
+
 
 		<div class="middle" id="tuto">
 			<button id="bgc" >Changer la couleur de fond</button>
@@ -39,7 +67,7 @@
 			<br>
 			<svg style="zoom:0.6;"; version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 			width="654px" height="1160px" viewBox="0 0 654 1160" enable-background="new 0 0 654 1160" xml:space="preserve">
-			<path id="mockup" fill="#E3DEDA" d="M223.179,805.249v79.727c0,0-4.399,58.598-6.059,64.126c-1.657,5.527,0,102.694,0,102.694l11.981,5.503
+			<path id="mockup" fill="#000000" d="M223.179,805.249v79.727c0,0-4.399,58.598-6.059,64.126c-1.657,5.527,0,102.694,0,102.694l11.981,5.503
 			c0,0-2.222,18.793-6.959,26.764c-6.87,11.561,0,21.941,0,21.941s16.235,8.117,40.587,6.959c24.354-1.16,19.242-17.316,19.242-27.775
 			c0-10.461,13.07-33.392,13.07-33.392s4.424-147.043,6.635-155.888c2.145-8.577,6.099-148.098,13.133-202.036
 			c1.138-8.722,15.927-14.22,20.233-3.981c5.979,49.781,3.441,206.347,5.377,215.193c1.939,8.845,6.635,145.938,6.635,145.938
@@ -66,6 +94,8 @@
 		<div>
 			<p>
 			Coded by Team Eleven
+			&nbsp &nbsp - &nbsp &nbsp
+			Main contributor : Mathieu Darrigade
 			&nbsp &nbsp - &nbsp &nbsp
 			Copyrights "Les Voyageurs du Code" & "Ecole 42" all rights reserved
 			&nbsp &nbsp - &nbsp &nbsp
