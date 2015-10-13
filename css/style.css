@@ -35,8 +35,13 @@ body
 	height: 30px;
 }
 
+	.tuto_btn {
+	margin-top: 5px;
+}
+
 #tuto input[type="range"]
 {
+	margin-top: 3px;
 	margin-left: 10px;
 	background-color: #EF4D61;
 }
