@@ -24,8 +24,11 @@ $(document).ready(function(){
 		strokeWidth: cbors + 'px'
 		//borderStyle: 'solid'
 		};
-		console.log(margg);
-	//	document.getElementById("svgsil").margin-left = margg;
+		console.log(cmargg);
+		svgsil.setAttribute("style", "margin-left: " + cmargg + "px");
+		svgsil.setAttribute("margin-right", cmargd);
+		svgsil.setAttribute("margin-bottom", cmargb);
+		svgsil.setAttribute("margin-top", cmargh);
 		$('#mockup').css(styles);
 		// document.getElementById("test-div").style.border =  cbors + 'px solid #' + cborc;
 	}
