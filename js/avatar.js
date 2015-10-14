@@ -40,6 +40,7 @@ $(document).ready(function(){
 		$('#footer').css("display", "inline");
 		console.log("test");
 	}
+	$('#avatar').click(get_input);
 	$('#dface').click(get_input);
 	$('#deye-right').click(get_input);
 	$('#deye-left').click(get_input);
@@ -58,16 +59,32 @@ $(document).ready(function(){
 	function get_input()
 	{
 		mofo_var = $(this).attr('class')
+		if (mofo_var == "btn btn-danger") {
+			mofo_var = "Avatar";
+			var avatar = document.getElementById("img_svg");
+		}
+		console.log(mofo_var);
 		var bg = '';
 		var bor = '';
+		var mt = '';
+		var mr = '';
+		var mb = '';
+		var ml = ''
 		console.log(props);
 		if (props[mofo_var] != undefined)
 		{
-			console.log("HEEEEEEEEEEEEEEEE");
 			if(props[mofo_var].bg != undefined)
 				bg = props[mofo_var].bg;
 			if(props[mofo_var].bor != undefined)
 				bor = props[mofo_var].bor;
+			if(props[mofo_var].mt != undefined)
+				mt = props[mofo_var].mt;
+			if(props[mofo_var].mr != undefined)
+				mr = props[mofo_var].mr;
+			if(props[mofo_var].mb != undefined)
+				mb = props[mofo_var].mb;
+			if(props[mofo_var].ml != undefined)
+				ml = props[mofo_var].ml;
 		}
 		else
 			props[mofo_var] = {bg: "", bor: ""};
@@ -105,6 +122,27 @@ $(document).ready(function(){
 				$('#' + elem).css(styles);
 				props[mofo_var].bor = pval;
 				$('#css-code').html('.' + mofo_var + '{<br>' + props[mofo_var].bg + '<br>' + props[mofo_var].bor + '<br><input id="f' + mofo_var + '"><br>}');
+			}
+			else if (val[0] == "margin-top" && mofo_var == "Avatar") {
+				mt = val[1];
+				avatar.style.marginTop = mt;
+				props[mofo_var].mt = mt;
+			//	$('#css-code').html('.' + mofo_var + '{<br>' + props[mofo_var].mt + '<br>' + props[mofo_var].bg + '<br>' + props[mofo_var].bor + '<br><input id="f' + mofo_var + '"><br>}');
+			}
+			else if (val[0] == "margin-right" && mofo_var == "Avatar") {
+				mr = val[1];
+				avatar.style.marginRight = mr;
+				props[mofo_var].mr = mr;
+			}
+			else if (val[0] == "margin-bottom" && mofo_var == "Avatar") {
+				mb = val[1];
+				avatar.style.marginBottom = mb;
+				props[mofo_var].mb = mb;
+			}
+			else if (val[0] == "margin-left" && mofo_var == "Avatar") {
+				ml = val[1];
+				avatar.style.marginLeft = ml;
+				props[mofo_var].ml = ml;
 			}
 			$('#f' + elem).val("");
 		});
