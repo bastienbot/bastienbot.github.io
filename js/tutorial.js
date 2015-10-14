@@ -24,11 +24,10 @@ $(document).ready(function(){
 		strokeWidth: cbors + 'px'
 		//borderStyle: 'solid'
 		};
-		console.log(cmargg);
-		svgsil.setAttribute("style", "margin-left: " + cmargg + "px");
-		svgsil.setAttribute("margin-right", cmargd);
-		svgsil.setAttribute("margin-bottom", cmargb);
-		svgsil.setAttribute("margin-top", cmargh);
+		svgsil.style.marginLeft = cmargg + "px";
+		svgsil.style.marginRight = cmargd + "px";
+		svgsil.style.marginBottom = cmargb + "px";
+		svgsil.style.marginTop = cmargh + "px";
 		$('#mockup').css(styles);
 		// document.getElementById("test-div").style.border =  cbors + 'px solid #' + cborc;
 	}
